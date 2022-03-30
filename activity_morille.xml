@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE3E3"
+    tools:context=".cepe">
+
+    <TextView
+        android:id="@+id/morille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="LA MORILLE "
+        android:layout_marginTop="20dp"
+        android:textColor="#BD881D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/ImageViewM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/titre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="8dp"
+        android:text="Differents morilles"
+        android:textColor="#AC7E21"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ImageViewM"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="8dp"
+        android:text="De forme ronde ou conique et alvéolées, elles n’ont pas de lames. La morille est toxique à l’état cru, elle doit être bien cuite (minimum 15 mn), afin de détruire les toxines qu'elle contient, responsables du syndrome hémolytique."
+        android:textColor="#816E48"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre1"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/titre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="8dp"
+        android:text="Périodes de cueillette"
+        android:textColor="#AC7E21"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintVertical_bias="0.006" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="8dp"
+        android:text="La période de pousse s'étend du mois de mars et se prolonge quelquefois jusqu’en juin. L'apparition des bourgeons sur les frênes et noisetiers, et la fleuraison de la jacinthe des bois, sont souvent annonciateur de la saison débutante."
+        android:textColor="#816E48"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre2"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/titre3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="8dp"
+        android:text="Où trouve-t-on des moriles?"
+        android:textColor="#AC7E21"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintVertical_bias="0.006" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="8dp"
+        android:text="La morille, champignon comestible, apprécie les zones humides, les bois clairs. Elle se niche dans les sols remués, en lisière de forêt, les talus herbeux, au bord des chemins, les vergers, les ruines ou les places à feu."
+        android:textColor="#816E48"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre3"
+        app:layout_constraintVertical_bias="0.006" />
+
+
+
+    <ImageView
+        android:id="@+id/ImageViewM"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="72dp"
+        android:adjustViewBounds="true"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/morille"
+        app:layout_constraintHeight_min="150dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

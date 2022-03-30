@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:elevation="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Biden aims to expand vaccines for adults and children"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/a" />
+
+            <TextView
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="24dp"
+                android:paddingHorizontal="16dp"
+                android:text="@string/champignion1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_heading" />
+
+            <Button
+                android:id="@+id/goToHomeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="GO TO MAIN PAGE"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@id/news">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
